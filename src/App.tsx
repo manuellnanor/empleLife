@@ -156,7 +156,7 @@ export default function App({ initialView = "landing" }: AppProps) {
             <span className="text-[12px] font-bold text-gray-400 tracking-widest uppercase">
               LIFE PRODUCTS
             </span>
-            <h1 className="text-[40px] sm:text-[52px] leading-[1.08] font-bold font-display tracking-tight text-gray-900 max-w-2xl">
+            <h1 className="mt-5 lg:mt-0 text-[40px] sm:text-[52px] leading-[1.08] font-bold font-display tracking-tight text-gray-900 max-w-2xl">
               Protection for you, your loved ones and employees.
             </h1>
           </div>

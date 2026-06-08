@@ -179,7 +179,7 @@ export default function Header({ currentView, onViewChange, onContactClick }: He
               className="fixed right-0 top-0 h-full w-[280px] bg-white shadow-xl z-50 p-6 flex flex-col justify-start lg:hidden"
             >
               <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4">
-                <span className="text-sm font-bold text-gray-500 tracking-wider">NAVIGATION</span>
+                <span className="text-sm font-bold text-gray-500 tracking-wider">Menu</span>
                 <button
                   id="mobile-drawer-close"
                   onClick={() => setIsMobileMenuOpen(false)}
