@@ -3,13 +3,12 @@
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { INSURANCE_PLANS, FAQS } from "./data";
+import { INSURANCE_PLANS } from "./data";
 import type { InsurancePlan } from "./types";
 
 import Header from "./components/Header";
 import PlanCard from "./components/PlanCard";
 import PlanDetailModal from "./components/PlanDetailModal";
-import BranchFinder from "./components/BranchFinder";
 import EmpleWayPage from "./components/EmpleWayPage";
 import ClaimsPage from "./components/ClaimsPage";
 import BranchesPage from "./components/BranchesPage";
@@ -61,7 +60,6 @@ export default function App({ initialView = "landing" }: AppProps) {
   const [currentView, setCurrentView] = useState<AppView>(initialView);
   const [selectedPlanForModal, setSelectedPlanForModal] = useState<InsurancePlan | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   
   // Fast feedback contact state
   const [isAdvisorDrawerOpen, setIsAdvisorDrawerOpen] = useState(false);
@@ -116,10 +114,6 @@ export default function App({ initialView = "landing" }: AppProps) {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }, 100);
-  };
-
-  const toggleFaq = (index: number) => {
-    setActiveFaqIndex(activeFaqIndex === index ? null : index);
   };
 
   const handleAdvisorSubmit = (e: FormEvent) => {
@@ -371,70 +365,6 @@ export default function App({ initialView = "landing" }: AppProps) {
       </section>
 
       {/* Branch Finder Area */}
-      <section id="branches" className="py-20 max-w-7xl mx-auto px-6">
-        <div className="mb-10 space-y-2">
-          <span className="text-[12px] font-bold text-gray-400 tracking-wider uppercase block">
-            NATIONWIDE COVERAGE
-          </span>
-          <h2 className="text-[28px] sm:text-[34px] font-bold font-display text-gray-900 tracking-tight leading-tight">
-            Find an emPLE Branch Office Near You
-          </h2>
-          <p className="text-sm text-gray-500 font-sans max-w-xl">
-            Locate authorized agencies and customer experience outlets throughout Accra, Kumasi, Takoradi, and Tamale to submit claims or manage policies in-person.
-          </p>
-        </div>
-
-        <BranchFinder />
-      </section>
-
-      {/* Frequently Asked Questions accordion */}
-      <section className="py-20 bg-[#faf8f6]/30 border-t border-[#f1f1f1]">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="text-center mb-10 space-y-2">
-            <span className="text-[11px] font-bold text-gray-400 uppercase tracking-widest block">ASSURANCE CLARITY</span>
-            <h2 className="text-[28px] font-bold font-display tracking-tight text-gray-950">Frequently Asked Questions</h2>
-          </div>
-
-          <div className="space-y-3.5">
-            {FAQS.map((faq, index) => {
-              const isOpen = activeFaqIndex === index;
-              return (
-                <div
-                  key={index}
-                  className="bg-white border border-[#f1f1f1] rounded-lg overflow-hidden transition-all"
-                >
-                  <button
-                    id={`faq-toggle-${index}`}
-                    onClick={() => toggleFaq(index)}
-                    className="w-full p-5 text-left font-sans text-sm font-bold text-gray-800 hover:text-emerald-800 flex justify-between items-center transition-colors cursor-pointer"
-                  >
-                    <span>{faq.question}</span>
-                    <span className="text-gray-400 flex-shrink-0">
-                      {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                    </span>
-                  </button>
-
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0 }}
-                        animate={{ height: "auto" }}
-                        exit={{ height: 0 }}
-                        transition={{ duration: 0.25, ease: "easeInOut" }}
-                        className="overflow-hidden"
-                      >
-                        <div className="px-5 pb-5 pt-0 text-xs text-gray-500 leading-relaxed bg-[#fafbfb] border-t border-[#f1f1f1]">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
         </>
       )}
 
