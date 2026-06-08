@@ -22,7 +22,7 @@ export default function EmpleWayPage({ onContactClick }: EmpleWayPageProps) {
     <div className="bg-[#fafbfb] min-h-screen pb-16 font-sans">
       
       {/* 1. HERO BANNER SECTION */}
-      <section className="relative w-full h-[320px] sm:h-[420px] md:h-[480px] bg-emerald-950 overflow-hidden dark-bg">
+      <section className="relative w-full h-[320px] sm:h-[420px] md:h-[480px] bg-emerald-950 overflow-hidden dark-bg scroll-mt-28 md:scroll-mt-32">
         {/* Abstract background elements */}
         <div className="absolute inset-0 bg-[#022c22]/35 z-10" />
         <img

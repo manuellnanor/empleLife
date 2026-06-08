@@ -71,7 +71,7 @@ export default function Header({ currentView, onViewChange, onContactClick }: He
       <div className="bg-[#052e16] text-white text-[12px] py-1.5 px-6 flex justify-between items-center border-b border-white/5">
         <div className="flex items-center space-x-2 font-medium tracking-wide">
           <Phone size={12} className="text-emerald-400" />
-          <span>Talk To Us: <span className="text-emerald-300 pointer-events-auto hover:underline font-mono">+233 30 263 3933</span></span>
+            <span><span className="hidden sm:inline">Talk To Us: </span><span className="text-emerald-300 pointer-events-auto hover:underline font-mono">+233 30 263 3933</span></span>
         </div>
         <div className="flex items-center space-x-6 text-[10px] sm:text-[11px] font-bold tracking-widest text-emerald-100/90">
           <button onClick={() => handleNavClick("#home", "HOME")} className="hover:text-emerald-300 transition-colors uppercase cursor-pointer">HOME</button>

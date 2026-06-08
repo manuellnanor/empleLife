@@ -42,6 +42,7 @@
 :root {
   --heading-color: #222F3E;
   --heading-color-on-dark: #ffffff;
+  scroll-padding-top: 5.5rem;
 }
 
 /* Use CSS variable for headings so utilities or context can override */

@@ -32,7 +32,7 @@ export default function ContactUsPage({ onOpenChatDrawer }: ContactUsPageProps) 
     <div className="bg-white min-h-screen font-montserrat select-none pb-20">
       
       {/* Immersive visual banner header featuring high contrast image matching screenshot layout */}
-      <div className="relative h-[280px] sm:h-[340px] md:h-[400px] w-full overflow-hidden bg-[#fafafa] pt-24 sm:pt-28 md:pt-36">
+      <div className="relative h-[280px] sm:h-[340px] md:h-[400px] w-full overflow-hidden bg-[#fafafa] pt-24 sm:pt-28 md:pt-36 scroll-mt-28 md:scroll-mt-32">
         {/* Absolute portrait overlay */}
         <div className="absolute inset-0 w-full h-full">
           <img 

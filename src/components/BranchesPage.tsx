@@ -227,7 +227,7 @@ export default function BranchesPage() {
 
   return (
     <div className="bg-white min-h-screen py-10 sm:py-16 md:py-20 font-montserrat select-none">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 pt-24 sm:pt-28 md:pt-36">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 pt-24 sm:pt-28 md:pt-36 scroll-mt-28 md:scroll-mt-32">
         
         {/* Subtle, highly functional Search filter matching the exact visual style of professional pages */}
         <div className="mb-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-gray-100 pb-8">

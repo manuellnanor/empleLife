@@ -39,7 +39,7 @@ export default function DownloadsPage() {
   };
 
   return (
-    <div className="bg-[#fafbfb] min-h-screen py-24 sm:py-28 md:py-36 font-montserrat select-none">
+    <div className="bg-[#fafbfb] min-h-screen py-24 sm:py-28 md:py-36 font-montserrat select-none scroll-mt-28 md:scroll-mt-32">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         
         {/* Giant Centered Header */}
