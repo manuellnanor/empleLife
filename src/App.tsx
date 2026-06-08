@@ -153,8 +153,8 @@ export default function App({ initialView = "landing" }: AppProps) {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
           {/* Main heading column */}
           <div className="lg:col-span-7 space-y-4">
-            <span className="block text-[12px] sm:text-[13px] font-bold text-gray-400 tracking-widest uppercase">
-              LIFE PRODUCTS
+            <span className="block mt-[20px] text-[12px] sm:text-[13px] font-bold text-gray-400 tracking-widest uppercase">
+              Emple Life
             </span>
             <h1 className="mt-5 lg:mt-0 text-[40px] sm:text-[52px] leading-[1.08] font-bold font-display tracking-tight text-gray-900 max-w-2xl">
               Protection for you, your loved ones and employees.
