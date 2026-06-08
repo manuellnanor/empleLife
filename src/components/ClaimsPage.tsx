@@ -158,7 +158,7 @@ export default function ClaimsPage() {
     <div className="bg-[#fafbfb] min-h-screen pb-16 font-sans select-none">
       
       {/* 1. HERO BANNER SECTION (Precisely matching layout and styling of screenshot) */}
-      <section className="relative w-full h-[280px] sm:h-[340px] bg-[#021f0f] overflow-hidden flex items-center dark-bg">
+      <section className="relative w-full h-[280px] sm:h-[340px] bg-[#021f0f] overflow-hidden flex items-center dark-bg pt-24 sm:pt-28 md:pt-36">
         {/* Background image & gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/95 via-emerald-950/85 to-[#021f0f]/60 z-10" />
         <img

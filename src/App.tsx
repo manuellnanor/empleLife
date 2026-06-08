@@ -149,7 +149,7 @@ export default function App({ initialView = "landing" }: AppProps) {
       {currentView === "landing" && (
         <>
           {/* Main Hero Section as requested: Heading on left, description/button on right */}
-          <section id="home" className="pt-12 md:pt-20 pb-8">
+          <section id="home" className="pt-24 sm:pt-28 md:pt-36 pb-8 scroll-mt-28 md:scroll-mt-32">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
           {/* Main heading column */}
           <div className="lg:col-span-7 space-y-4">
@@ -441,7 +441,7 @@ export default function App({ initialView = "landing" }: AppProps) {
       {currentView === "products" && (
         <>
           {/* emPLE Life Products Header title block */}
-          <section className="bg-white pt-10 pb-5">
+          <section className="bg-white pt-24 sm:pt-28 md:pt-36 pb-5">
             <div className="max-w-7xl mx-auto px-6">
               <h1 id="products-view-heading" className="text-[40px] sm:text-[52px] leading-[1.08] font-bold font-sans tracking-tight text-gray-950">
                 emPLE Life Products

@@ -728,6 +728,9 @@
   .resize-none {
     resize: none;
   }
+  .scroll-mt-28 {
+    scroll-margin-top: calc(var(--spacing) * 28);
+  }
   .scrollbar-thin {
     scrollbar-width: thin;
   }
@@ -1577,6 +1580,9 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -1609,6 +1615,9 @@
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -2747,6 +2756,16 @@
       padding-block: calc(var(--spacing) * 24);
     }
   }
+  .sm\:py-28 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 28);
+    }
+  }
+  .sm\:pt-28 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 28);
+    }
+  }
   .sm\:pb-12 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 12);
@@ -2977,6 +2996,11 @@
       max-width: var(--container-sm);
     }
   }
+  .md\:scroll-mt-32 {
+    @media (width >= 48rem) {
+      scroll-margin-top: calc(var(--spacing) * 32);
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3027,9 +3051,19 @@
       padding-block: calc(var(--spacing) * 24);
     }
   }
+  .md\:py-36 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 36);
+    }
+  }
   .md\:pt-20 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:pt-36 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 36);
     }
   }
   .md\:pb-16 {

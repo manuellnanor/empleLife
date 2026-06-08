@@ -265,7 +265,7 @@ export default function VacanciesPage() {
     <div className="bg-[#FAFBFB] min-h-screen font-sans select-none pb-24">
       
       {/* Immersive head header matching screenshot */}
-      <div className="relative h-[280px] sm:h-[340px] md:h-[380px] w-full overflow-hidden bg-[#0a2312]">
+      <div className="relative h-[280px] sm:h-[340px] md:h-[380px] w-full overflow-hidden bg-[#0a2312] pt-24 sm:pt-28 md:pt-36">
         
         {/* Exact Photo placement from system assets */}
         <div className="absolute inset-0 w-full h-full">
