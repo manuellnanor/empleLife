@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-montserrat: "Montserrat", sans-serif;
+  
+  --color-brand-primary: #32B44A;
+  --color-brand-secondary: #047857;
+  --color-brand-dark: #064E3B;
+  --color-brand-neutral: #fcfbfa;
+}
+
+/* Custom scrollbar behaviors */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Soft ambient pulse highlight for calculations */
+@keyframes softPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+
+.calc-pulse {
+  animation: softPulse 2.5s infinite ease-in-out;
+}
+
+/* Headings color defaults and variables */
+:root {
+  --heading-color: #222F3E;
+  --heading-color-on-dark: #ffffff;
+}
+
+/* Use CSS variable for headings so utilities or context can override */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+/* Force headings white in marked dark background containers */
+.dark-bg h1,
+.dark-bg h2,
+.dark-bg h3,
+.dark-bg h4,
+.dark-bg h5,
+.dark-bg h6 {
+  color: var(--heading-color-on-dark) !important;
+}
+
+/* Headings that need the default dark heading color on light backgrounds */
+.heading-on-white {
+  color: var(--heading-color);
+}
+
