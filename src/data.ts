@@ -1,5 +1,18 @@
 import { InsurancePlan, Branch } from "./types";
 
+const buildPersonImagePath = (name: string) => {
+  const normalized = name
+    .toLowerCase()
+    .replace(/['".(),]/g, "")
+    .replace(/&/g, "and")
+    .replace(/\s+/g, "_")
+    .replace(/-+/g, "_")
+    .replace(/_+/g, "_")
+    .replace(/^_+|_+$/g, "");
+
+  return `/assets/images/${normalized}.png`;
+};
+
 export const INSURANCE_PLANS: InsurancePlan[] = [
   {
     id: "wellness",
@@ -218,37 +231,37 @@ export const BOARD_MEMBERS: TeamMember[] = [
   {
     name: "Kwame-Gazo Agbemyadzie",
     role: "Chairperson",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Kwame-Gazo Agbemyadzie")
   },
   {
     name: "Rafique Daudi",
     role: "CEO/Country Head",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Rafique Daudi")
   },
   {
     name: "Beatrice Bridget Ofei",
     role: "Independent Non-Executive Director",
-    image: "/assets/images/director_female_2_1780860132717.png"
+    image: buildPersonImagePath("Beatrice Bridget Ofei")
   },
   {
     name: "Audrey Naa Dei Kotey",
     role: "Independent Non-Executive Director",
-    image: "/assets/images/director_female_2_1780860132717.png"
+    image: buildPersonImagePath("Audrey Naa Dei Kotey")
   },
   {
     name: "Mr Nii Akwei Tetteh",
     role: "Independent Non Executive Director",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Mr Nii Akwei Tetteh")
   },
   {
     name: "Mr. Jolaolu Fakoya",
     role: "Non-Executive Director",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Mr. Jolaolu Fakoya")
   },
   {
     name: "Mr. Olufemi Ahmed Sofola",
     role: "Non Executive Director",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Mr. Olufemi Ahmed Sofola")
   }
 ];
 
@@ -256,46 +269,46 @@ export const MANAGEMENT_MEMBERS: TeamMember[] = [
   {
     name: "Rafique Daudi",
     role: "CEO/Country Head",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Rafique Daudi")
   },
   {
     name: "Betty Sarpong Dadzie (Mrs.)",
     role: "Head of Operations",
-    image: "/assets/images/director_female_2_1780860132717.png"
+    image: buildPersonImagePath("Betty Sarpong Dadzie Mrs")
   },
   {
     name: "Mr. Lawal Aburi Alhassan",
     role: "Ag. Chief Finance Officer (CFO)",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Mr. Lawal Aburi Alhassan")
   },
   {
     name: "Louisa Duncan-Williams",
     role: "Head of Human Capital & Admin",
-    image: "/assets/images/director_female_2_1780860132717.png"
+    image: buildPersonImagePath("Louisa Duncan-Williams")
   },
   {
     name: "Philip Kwao Nyumutei",
     role: "Head of Business Enablement & IT",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Philip Kwao Nyumutei")
   },
   {
     name: "Bennet Tettey Madjitey",
     role: "Head of Retail Distribution",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Bennet Tettey Madjitey")
   },
   {
     name: "Kwame Tabiri",
     role: "Head, Internal Auditor",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Kwame Tabiri")
   },
   {
     name: "Yaw Okyere Sompa",
     role: "Head, Legal and Risk",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Yaw Okyere Sompa")
   },
   {
     name: "Mr. Richmond Grant",
     role: "Head , Corporate and Alternative Distribution",
-    image: "/assets/images/director_male_1_1780860112475.png"
+    image: buildPersonImagePath("Mr. Richmond Grant")
   }
 ];
